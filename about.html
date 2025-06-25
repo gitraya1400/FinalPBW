@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Yarac Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=League+Gothic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links left">
+                <a href="index.html">HOME</a>
+                <a href="products.html">PRODUCTS</a>
+            </div>
+            <div class="nav-logo">
+                <img src="Yarac LOgo.png" alt="Yarac Logo" id="logo">
+            </div>
+            <div class="nav-links right">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="nav-auth">
+                <a href="login.html" class="sign-in-btn">SIGN IN</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Dropdown -->
+    <div class="cart-dropdown" id="cart-dropdown">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: <span id="cart-total">Rp 0</span></strong>
+            </div>
+            <button class="btn-checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Yarac</h1>
+            <p>Redefining fashion with style, quality, and sustainability</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>Yarac didirikan dengan visi untuk menghadirkan fashion berkualitas tinggi yang terjangkau untuk semua kalangan. Kami percaya bahwa setiap orang berhak tampil percaya diri dengan gaya mereka sendiri.</p>
+                    <p>Sejak tahun 2020, kami telah melayani ribuan pelanggan di seluruh Indonesia dengan koleksi pakaian yang selalu mengikuti tren terkini namun tetap mempertahankan kualitas dan kenyamanan.</p>
+                    <p>Tim desainer kami bekerja keras untuk menciptakan produk-produk yang tidak hanya stylish, tetapi juga sustainable dan ramah lingkungan.</p>
+                </div>
+                <div class="story-image">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Our Story">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="our-values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Quality">
+                    </div>
+                    <h3>Quality</h3>
+                    <p>Kami menggunakan bahan berkualitas tinggi dan proses produksi yang ketat untuk memastikan setiap produk memenuhi standar terbaik.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Style">
+                    </div>
+                    <h3>Style</h3>
+                    <p>Desain yang selalu up-to-date dengan tren fashion terkini, namun tetap timeless dan dapat digunakan dalam berbagai kesempatan.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Sustainability">
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Komitmen kami terhadap lingkungan dengan menggunakan bahan ramah lingkungan dan proses produksi yang sustainable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="10000">0</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p>Products Sold</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Cities Reached</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="4">0</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Yarac</h3>
+                    <p>Fashion store terpercaya untuk gaya hidup modern Anda</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="wrapper">
+                        <a href="https://instagram.com/yarac" target="_blank" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="icon whatsapp">
+                            <div class="tooltip">WhatsApp</div>
+                            <span><i class="fab fa-whatsapp"></i></span>
+                        </a>
+                        <a href="https://youtube.com/yarac" target="_blank" class="icon youtube">
+                            <div class="tooltip">YouTube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Info</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@yarac.com</p>
+                    <p>Phone: +62 123 456 789</p>
+                    <p>Address: Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yarac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

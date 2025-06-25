@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarac` - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=League+Gothic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links left">
+                <a href="index.html">HOME</a>
+                <a href="products.html">PRODUCTS</a>
+            </div>
+            <div class="nav-logo">
+                <img src="Yarac LOgo.png" alt="Yarac Logo" id="logo">
+            </div>
+            <div class="nav-links right">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="nav-auth">
+                <a href="login.html" class="sign-in-btn">SIGN IN</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Dropdown -->
+    <div class="cart-dropdown" id="cart-dropdown">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: <span id="cart-total">Rp 0</span></strong>
+            </div>
+            <button class="btn-checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-filters">
+            <button class="filter-btn active" data-filter="all">ALL <span>></span></button>
+            <button class="filter-btn" data-filter="men">MEN <span>></span></button>
+            <button class="filter-btn" data-filter="women">WOMEN <span>></span></button>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            <div class="view-all">
+                <a href="products.html" class="btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="shirts">
+                    <h3>Shirts</h3>
+                    <p>Koleksi kemeja terbaru</p>
+                </div>
+                <div class="category-card" data-category="casual">
+                    <h3>Casual Wear</h3>
+                    <p>Pakaian santai kekinian</p>
+                </div>
+                <div class="category-card" data-category="formal">
+                    <h3>Formal Wear</h3>
+                    <p>Pakaian formal elegan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Dapatkan info terbaru tentang koleksi dan promo menarik</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quick-view-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuickView()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-product-image" src="/placeholder.svg" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-product-name"></h3>
+                    <p id="modal-product-category"></p>
+                    <p id="modal-product-price"></p>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <select id="size-select">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <input type="number" id="quantity-input" value="1" min="1">
+                    </div>
+                    <button class="btn-add-cart-modal" onclick="addToCartFromModal()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Yarac`</h3>
+                    <p>Fashion store terpercaya untuk gaya hidup modern Anda</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="wrapper">
+
+                        <a href="https://instagram.com/yarac" target="_blank" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="icon whatsapp">
+                            <div class="tooltip">WhatsApp</div>
+                            <span><i class="fab fa-whatsapp"></i></span>
+                        </a>
+                        <a href="https://youtube.com/yarac" target="_blank" class="icon youtube">
+                            <div class="tooltip">YouTube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Info</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@yarac.com</p>
+                    <p>Phone: +62 123 456 789</p>
+                    <p>Address: Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yarac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

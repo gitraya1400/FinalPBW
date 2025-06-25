@@ -1,0 +1,267 @@
+/* ===== STAT CREDIT MODERN THEME ===== */
+.root {
+  -fx-font-family: "Segoe UI", Arial, sans-serif;
+  -fx-background-color: linear-gradient(to bottom right, #fff5d0, #8ebd9d);
+}
+
+/* ===== GRADIENTS ===== */
+.gradient-primary {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+}
+
+.gradient-secondary {
+  -fx-background-color: linear-gradient(to bottom right, #fad564, #b4bd62);
+}
+
+.gradient-success {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #b4bd62);
+}
+
+.gradient-warning {
+  -fx-background-color: linear-gradient(to bottom right, #fad564, #f4a261);
+}
+
+.gradient-info {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+}
+
+.gradient-danger {
+  -fx-background-color: linear-gradient(to bottom right, #e76f51, #c44536);
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+  -fx-text-fill: white;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-padding: 12 24 12 24;
+  -fx-background-radius: 25;
+  -fx-border-radius: 25;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+  -fx-cursor: hand;
+}
+
+.button:hover {
+  -fx-background-color: linear-gradient(to bottom right, #a8d1b0, #2a5a72);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.button-success {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #b4bd62);
+}
+
+.button-warning {
+  -fx-background-color: linear-gradient(to bottom right, #fad564, #f4a261);
+  -fx-text-fill: #1b475d;
+}
+
+.button-danger {
+  -fx-background-color: linear-gradient(to bottom right, #e76f51, #c44536);
+}
+
+.button-info {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+}
+
+.button-primary {
+  -fx-background-color: linear-gradient(to bottom right, #fad564, #8ebd9d);
+  -fx-text-fill: #1b475d;
+  -fx-font-weight: bold;
+}
+
+/* ===== INPUT FIELDS ===== */
+.text-field,
+.password-field,
+.combo-box,
+.date-picker {
+  -fx-background-color: #fffbf0;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 2;
+  -fx-border-radius: 15;
+  -fx-background-radius: 15;
+  -fx-padding: 15;
+  -fx-font-size: 14px;
+  -fx-text-fill: #1b475d;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box:focused {
+  -fx-background-color: white;
+  -fx-border-color: #fad564;
+  -fx-border-width: 3;
+  -fx-effect: dropshadow(gaussian, rgba(250, 213, 100, 0.5), 12, 0, 0, 4);
+}
+
+/* ===== CARDS ===== */
+.card {
+  -fx-background-color: rgba(255, 255, 255, 0.95);
+  -fx-background-radius: 20;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 2;
+  -fx-border-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+  -fx-padding: 30;
+}
+
+.card-gradient {
+  -fx-background-color: linear-gradient(to bottom right, rgba(255, 245, 208, 0.95), rgba(255, 255, 255, 0.9));
+  -fx-background-radius: 20;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 2;
+  -fx-border-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 20, 0, 0, 10);
+}
+
+/* ===== HEADER ===== */
+.header {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+  -fx-padding: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 12, 0, 0, 4);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  -fx-background-color: linear-gradient(to bottom, #fffbf0, rgba(255, 255, 255, 0.9));
+  -fx-background-radius: 0 20 20 0;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 0 2 0 0;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 12, 0, 3, 0);
+  -fx-padding: 20;
+}
+
+.sidebar .button {
+  -fx-background-color: transparent;
+  -fx-text-fill: #1b475d;
+  -fx-background-radius: 15;
+  -fx-padding: 15 20 15 20;
+  -fx-font-weight: normal;
+  -fx-effect: none;
+}
+
+.sidebar .button:hover {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);
+}
+
+/* ===== TABLES ===== */
+.table-view {
+  -fx-background-color: #fffbf0;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 2;
+  -fx-background-radius: 15;
+  -fx-border-radius: 15;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 4);
+}
+
+.table-view .column-header {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 13px;
+  -fx-padding: 15;
+}
+
+.table-view .column-header-background {
+  -fx-background-color: linear-gradient(to bottom right, #8ebd9d, #1b475d);
+  -fx-background-radius: 15 15 0 0;
+}
+
+.table-row-cell:odd {
+  -fx-background-color: rgba(142, 189, 157, 0.1);
+}
+
+.table-row-cell:even {
+  -fx-background-color: white;
+}
+
+.table-row-cell:hover {
+  -fx-background-color: rgba(250, 213, 100, 0.3);
+}
+
+/* ===== TABS ===== */
+.tab-pane {
+  -fx-background-color: #fffbf0;
+  -fx-border-color: #8ebd9d;
+  -fx-border-width: 2;
+  -fx-background-radius: 15;
+  -fx-border-radius: 15;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 4);
+}
+
+.tab {
+  -fx-background-color: rgba(255, 255, 255, 0.7);
+  -fx-background-radius: 15 15 0 0;
+  -fx-padding: 15 25 15 25;
+  -fx-font-weight: normal;
+}
+
+.tab:selected {
+  -fx-background-color: linear-gradient(to bottom right, #fad564, #8ebd9d);
+}
+
+/* ===== TEXT STYLES ===== */
+.title-large {
+  -fx-font-size: 32px;
+  -fx-font-weight: bold;
+  -fx-fill: #1b475d;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2);
+}
+
+.title-medium {
+  -fx-font-size: 24px;
+  -fx-font-weight: bold;
+  -fx-fill: #1b475d;
+}
+
+.title-small {
+  -fx-font-size: 18px;
+  -fx-font-weight: normal;
+  -fx-fill: #1b475d;
+}
+
+.text-white {
+  -fx-fill: white;
+  -fx-font-weight: bold;
+}
+
+.stat-credit-brand {
+  -fx-fill: #a7fff2;
+  -fx-font-weight: bold;
+  -fx-font-size: 28px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 6, 0, 0, 2);
+}
+
+/* ===== GLASS EFFECT ===== */
+.glass {
+  -fx-background-color: rgba(255, 245, 208, 0.6);
+  -fx-background-radius: 20;
+  -fx-border-color: rgba(142, 189, 157, 0.4);
+  -fx-border-width: 1;
+  -fx-border-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 15, 0, 0, 5);
+}
+
+/* ===== CONTAINER ===== */
+.container-fluid {
+  -fx-padding: 20;
+  -fx-spacing: 20;
+}
+
+/* ===== LOADING STYLES ===== */
+.loading-container {
+  -fx-background-color: linear-gradient(to bottom right, #fff5d0, #8ebd9d, #1b475d);
+}
+
+.logo-container {
+  -fx-alignment: center;
+  -fx-spacing: 20;
+}
+
+.stat-credit-logo {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 0, 8);
+}
